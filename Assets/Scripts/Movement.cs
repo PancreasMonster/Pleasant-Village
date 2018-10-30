@@ -32,5 +32,14 @@ public class Movement : MonoBehaviour {
 		//}
 	}
 
-    
+
+    void OnTriggerStay2D() {
+        Debug.Log("Hello");
+
+        if (Input.GetKeyDown (KeyCode.E)){
+            flow.ExecuteBlock("Little Girl V1");
+
+          }
+	}
+
 }
