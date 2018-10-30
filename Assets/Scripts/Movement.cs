@@ -33,8 +33,12 @@ public class Movement : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D () {
-		Debug.Log ("Hello");
-        flow.ExecuteBlock("New Block1");
+    void OnTriggerStay2D() {
+        Debug.Log("Hello");
+
+        if (Input.GetKeyDown (KeyCode.E)){
+            flow.ExecuteBlock("New Block1");
+
+          }
 	}
 }
