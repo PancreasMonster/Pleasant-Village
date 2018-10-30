@@ -27,17 +27,21 @@ public class Movement : MonoBehaviour {
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 		}
 
-		if (Input.GetMouseButtonDown (0)) {
-			aud.pitch -= .02f;
-		}
+		//if (Input.GetMouseButtonDown (0)) {
+		//	aud.pitch -= .02f;
+		//}
 	}
 
+<<<<<<< HEAD
     void OnTriggerStay2D() {
         Debug.Log("Hello");
 
         if (Input.GetKeyDown (KeyCode.E)){
-            flow.ExecuteBlock("New Block1");
+            flow.ExecuteBlock("Little Girl V1");
 
           }
 	}
+=======
+    
+>>>>>>> 745d9bb9fb6d7cea89629acc1e6045be7347e446
 }
