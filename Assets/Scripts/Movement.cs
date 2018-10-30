@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour {
 		//}
 	}
 
-<<<<<<< HEAD
+
     void OnTriggerStay2D() {
         Debug.Log("Hello");
 
@@ -41,7 +41,5 @@ public class Movement : MonoBehaviour {
 
           }
 	}
-=======
-    
->>>>>>> 745d9bb9fb6d7cea89629acc1e6045be7347e446
+
 }
