@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class Movement : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class Movement : MonoBehaviour {
 	public AudioSource aud;
 	[Range (0,20)]
 	public float speed;
+    public Flowchart flow;
 
 	// Use this for initialization
 	void Start () {
@@ -33,5 +35,6 @@ public class Movement : MonoBehaviour {
 
 	void OnTriggerEnter2D () {
 		Debug.Log ("Hello");
+        flow.ExecuteBlock("New Block1");
 	}
 }
