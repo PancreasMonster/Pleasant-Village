@@ -12,8 +12,7 @@ public class Movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody2D> ();
-		//aud = Get
+		
 	}
 	
 	// Update is called once per frame
@@ -27,7 +26,7 @@ public class Movement : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButtonDown (0)) {
-			aud.pitch -= .1f;
+			aud.pitch -= .02f;
 		}
 	}
 
